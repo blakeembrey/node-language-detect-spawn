@@ -1,0 +1,33 @@
+{
+  "name": "language-detect-spawn",
+  "version": "0.0.0",
+  "description": "Automatically spawns a file in a known programming language.",
+  "main": "language-detect-spawn.js",
+  "scripts": {
+    "test": "istanbul cover _mocha -- -R spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/blakeembrey/node-language-detect-spawn.git"
+  },
+  "keywords": [
+    "language",
+    "detect",
+    "spawn",
+    "process"
+  ],
+  "author": "Blake Embrey",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/blakeembrey/node-language-detect-spawn/issues"
+  },
+  "homepage": "https://github.com/blakeembrey/node-language-detect-spawn",
+  "devDependencies": {
+    "mocha": "^1.18.2",
+    "istanbul": "^0.2.6"
+  },
+  "dependencies": {
+    "language-detect": "0.0.3",
+    "language-spawn": "0.0.1"
+  }
+}
