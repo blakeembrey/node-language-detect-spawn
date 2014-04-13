@@ -1,6 +1,6 @@
 {
   "name": "language-detect-spawn",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Automatically spawns a file in a known programming language.",
   "main": "language-detect-spawn.js",
   "scripts": {
