@@ -49,7 +49,7 @@ describe('language-detect-spawn', function () {
       });
 
       process.on('close', function (code) {
-        assert.equal(code, 8);
+        assert(code !== 0);
         assert.ok(data);
 
         return done();
