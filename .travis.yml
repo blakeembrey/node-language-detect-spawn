@@ -1,3 +1,4 @@
+sudo: false
 language: node_js
 
 notifications:
@@ -6,6 +7,9 @@ notifications:
     on_failure: change
 
 node_js:
-  - "0.10"
+  - "stable"
+
+before_script:
+  - npm install coffeescript -g
 
 after_script: "npm install coveralls@2 && cat ./coverage/lcov.info | coveralls"

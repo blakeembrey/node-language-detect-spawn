@@ -10,7 +10,9 @@ describe('language-detect-spawn', function () {
       var data    = '';
       var process = spawn(file);
 
-      process.stderr.on('data', done);
+      process.stderr.on('data', function (chunk) {
+        return done(new Error(chunk.toString()));
+      });
 
       process.stdout.on('data', function (chunk) {
         data += chunk;
